@@ -82,24 +82,13 @@
         </tr>
        
     </table>
-    <script>
-        function togglePasswordVisibility() {
-            var passwordField = document.getElementById("password");
-            if (passwordField.type === "password") {
-                passwordField.type = "text";
-            } else {
-                passwordField.type = "password";
-            }
-        }
-    </script>
-    <!-- Form -->
      <form align="Center" action="g.html" method="post">
         <h3><strong><mark>Sign In To Watch</mark></strong></h3>
         <label for="name">Name:</label>
         <input type="text" id="name" name="name"><br><br>
         <label for="password">Password:</label>
-        <input type="password" id="password" name="password">
-        <button type="button" onclick="togglePasswordVisibility()">Toggle Visibility</button><br><br>
+        <input type="password" id="password" name="password" required>
+        <br><br>
         <input type="submit" value="GO WATCH">
         <input type="reset" value="reset" value="reset"/>
     </form>
